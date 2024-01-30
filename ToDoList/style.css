@@ -1,0 +1,147 @@
+* {
+    /* Apply border-box sizing to all the elements in the web page html */
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Single font family for all elements */
+}
+
+body {
+    /* Body Style */
+    background-color: black; /* Dark black background */
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    /* Container Style */
+    width: 40%;
+    background-color: black; /* Black container */
+    align-self: center;
+    display: block;
+    margin: 120px auto;
+    box-shadow: 5px 10px 20px black(0, 0, 0, 0.7); /* Slightly transparent black shadow */
+}
+
+ul {
+    /* UnOrdered List Style */
+    margin: 0;
+    border-left: 6px solid dodgerblue; /* Blue left border */
+    list-style-type: none;
+    padding: 0;
+    background-color: aliceblue; /* Off white background color */
+}
+
+ul li {
+    /* UnOrdered List Items Style*/
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: aliceblue; /* Off white background color */
+    font-size: 18px;
+    color: black; /* Font color set to black */
+    transition: 0.4s;
+    user-select: none;
+}
+
+ul li:hover {
+    /* List Items on Hover Style */
+    background-color: dodgerblue; /* Darker blue on hover */
+}
+
+ul li:nth-child(odd) {
+    /* Odd Numbered List Items Style */
+    background: aliceblue; /* Off white background color */
+}
+
+ul li.checked {
+    /* Checked List Items Style */
+    background-color: dodgerblue; /* Dark blue for checked items */
+    color: black;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    /* Checked Marks Style*/
+    content: "";
+    position: absolute;
+    border-color: aliceblue; /* Off white background color */
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.close {
+    /* Close Buttons Style*/
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+    color: black; /* Font color set to black */
+}
+
+.close.hover {
+    /* CloseButton Hover Style*/
+    background-color: orangered; /* Orange-red on hover */
+    color: black;
+}
+
+.header {
+    /* Header Style */
+    background-color: dodgerblue; /* Dark blue header */
+    padding: 30px 30px;
+    color: white;
+    text-align: center;
+}
+
+.header::after {
+    /* Header ClearFix*/
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input {
+    /* Input Elements Style*/
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    color: black; /* Font color set to black */
+}
+
+.addBtn {
+    /* "Add" Button Style */
+    padding: 10px;
+    width: 25%;
+    background: royalblue; /* Dark blue button */
+    color: black; /* Font color set to black */
+    float: left;
+    text-align: center;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+.addBtn:hover {
+    /* AddBtn Hover Style */
+    background-color: black;
+    color: royalblue;
+}
+
+footer {
+    /* Footer Style*/
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+    height: 5vh;
+    font-family: 'cursive';
+    color: dodgerblue; /* Font color set to black */
+}
